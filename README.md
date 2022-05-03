@@ -127,6 +127,36 @@ The Game class is an abstract parent class. It has the structure to make differe
       </li>
     </ul>
     </li>
+  <li>Other Methods:</li>
+  <ul class="circle">
+    <li>public void statsFile()</li>
+      <ul class="square">
+        <li>Takes the user’s stats and writes them into a file</li>
+      </ul>
+      </li>
+    <li>public abstract void play()</li>
+      <ul class="square">
+        <li>Abstract method that child classes must override</li>
+        <li>Plays a game</li>
+      </ul>
+      </li>
+    <li>protected abstract boolean canPlay()</li>
+      <ul class="square">
+        <li>Abstract method that child classes must override</li>
+        <li>Determines if the user can play a game</li>
+        <li>Returns a boolean value - true/false if the user can play</li>
+        <li>Protected because the user doesn’t need to call this method as it should be called at the beginning of the play method</li>
+      </ul>
+      </li>
+    <li>protected abstract void playAgain()</li>
+      <ul class="squre">
+        <li>Abstract method that child classes must override</li>
+        <li>Asks the user if they want to play again</li>
+        <li>Protected because the user doesn’t need to call this method as it should be called at the end of the play method</li>
+      </ul>
+      </li>
+    </ul>
+    </li>
   </ul>
   </li>
   <br>
