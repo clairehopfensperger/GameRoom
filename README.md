@@ -37,11 +37,16 @@ In order to begin a game of ‘Rock, Paper, Scissors’, you need to call the pl
 <br>
 
 <p align="center">
-  <img src="https://github.com/clairehopfensperger/GameRoom/blob/main/Images/howItWorks5.jpg" width=500>
+  <img src="https://github.com/clairehopfensperger/GameRoom/blob/main/Images/howItWorks5.jpg" width=500><br>
+  <img src="https://github.com/clairehopfensperger/GameRoom/blob/main/Images/howItWorks6.jpg" width=500>
 </p>
 
 When you’re done playing ‘Rock, Paper, Scissors’, you can save your game statistics to a file by using the statsFile() method. When you call this method, you will be prompted to enter a name of a file, and then a file with the name you inputted will be created with your remaining tokens and final score written inside of it. The program will say when your file is ready.
 <br>
+
+<p align="center">
+  <img src="https://github.com/clairehopfensperger/GameRoom/blob/main/Images/howItWorks7.jpg" width=500>
+</p>
 
 After you finish playing ‘Rock, Paper, Scissors’, you can start the process of choosing prizes by creating a Prizes object and adding arguments for score and tokens. In order to add these tokens, you can call getScore() and getTokens() for your RockPaperScissors object. Then, to see and select prizes, you must call the listPrizes() method for your Prizes object. 
 <br>
