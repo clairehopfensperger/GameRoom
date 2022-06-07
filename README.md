@@ -1,4 +1,4 @@
-<h1 align="center">🎮 Game Room</h1><br>
+<h1 align="center">🎮 Game Room 🎮</h1><br>
 
 new repository, work in progress :)
 
@@ -15,11 +15,11 @@ The assignment's requirements were:
 - Explain how the code works, how someone else could use it, and all of the classes' and methods' details
 <br><br><br>
 
-## The Problem
+## 🎯 The Problem
 The problem I solved with my code is being able to play a game. I created 3 classes: A Game class, a RockPaperScissors class, and a Prizes class. The purpose of the overall code is to play ‘Rock, Paper, Scissors’ and then purchase prizes with the earned tickets.
 <br><br><br>
 
-## How it Works
+## 🕹 How it Works
 The following description explains how the code written in GameTester.java works from the user’s perspective. Method breakdowns are under “Class Overviews/Documentation.”
 <br>
 
@@ -68,7 +68,7 @@ Another way people could use my code is by creating their own games using my abs
 </ol type = "1">
 <br><br>
 
-## UML
+## 🎲 UML
 Here's the UML for my program. 😎
 <br>
 <p align="center">
@@ -76,7 +76,7 @@ Here's the UML for my program. 😎
 </p>
 <br><br>
 
-## Class Overviews/Documentation
+## 🎱 Class Overviews/Documentation
 ### Game
 The Game class is an abstract parent class. It has the structure to make different child class game objects.
 <br>
@@ -124,7 +124,7 @@ The Game class is an abstract parent class. It has the structure to make differe
       </ul>
       </li>
     <li>protected void setScore(int score)</li>
-      <ul class="squre">
+      <ul class="square">
         <li>Sets the user's score</li>
         <li>Parameter int score - user's score</li>
         <li>Protected because I didn’t want the user to be able to mess with their score but I needed the child classes to be able to use this method</li>
