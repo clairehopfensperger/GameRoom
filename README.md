@@ -18,6 +18,7 @@
 			<ul>
 				<li><a href="#game">Game</a></li>
         			<li><a href="#rockpaperscissors">RockPaperScissors</a></li>
+				<li><a href="#prizes">Prizes</a></li>
 			</ul>
 		</td>
   	</tr>
@@ -291,6 +292,88 @@ The RockPaperScissors class is a child class to the Game class. It is used to cr
 		</li>
 	</ul>
 </li>
+<br>
+<br>
+
+### Prizes
+The Prizes class is used to create Prizes objects that allow the user to purchase prizes.
+<br>
+
+<ul class="disk">
+<li>Instance Variables:</li>
+	<ul class="circle">
+    		<li>The Prizes class is used to create Prizes objects that allow the user to purchase prizes.</li>
+    		<li>private ArrayList< Integer > prices - an ArrayList of int variables representing the corresponding prices to the available prizes</li>
+		<li>private ArrayList< String > myPrizeList - an ArrayList of String objects representing the prizes the user purchased</li>
+		<li>private int tokens - user’s token count</li>
+		<li>private int score - user’s score</li>
+		<li>private int tickets - user’s tickets</li>
+  	</ul>
+  	</li>
+	<br>
+ 
+<li>Constructor: public Prizes(int score, int tokens)</li>
+  	<ul class="circle">
+    		<li>Used to create Prizes objects that allow the user to purchase prizes</li>
+    		<li>Parameter int score - user’s score</li>
+    		<li>Parameter int tokens - user’s token count</li>
+ 	</ul>
+</li>
+<br>
+ 
+<li>Getters/Setters:</li>
+  	<ul class="circle">
+    		<li>private void setTickets(int tickets)</li>
+     			<ul class="square">
+        			<li>Sets the user’s ticket count</li>
+        			<li>Parameter int tickets - user’s ticket count</li>
+				<li>Private because the user doesn’t need to call this method as it should be called in the setup method</li>
+      			</ul>
+      		</li>
+    		<li>public int getTickets()</li>
+      			<ul class="square">
+        			<li>Gets the user’s tickets</li>
+        			<li>Returns an int value - user’s tickets</li>
+				<li>Private because the user doesn’t need to call this method as it should be called in the selectPrize() method when determining if the user has enough tickets for a prize</li>
+      			</ul>
+      		</li>
+	</ul>
+</li>
+<li>Other Methods:</li>
+  	<ul class="circle">
+    		<li>public void listPrizes()</li>
+			<ul class="square">
+        			<li>Prints the prizes and their corresponding prices</li>
+			</ul>
+      		</li>
+    		<li>public void myPrizes()</li>
+      			<ul class="square">
+        			<li>Prints the prizes that the user purchased</li>
+      			</ul>
+      		</li>
+    		<li>private void setup()</li>
+      			<ul class="square">
+        			<li>Calculates the user’s ticket count</li>
+        			<li>Adds prizes and corresponding prices to their respective ArrayLists</li>
+        			<li>Private because the user doesn’t need to call this method as it should be called in the beginning of the listPrizes() method</li>
+      			</ul>
+      		</li>
+    		<li>private void pickPrize()</li>
+      			<ul class="squre">
+        			<li>Allows the user to select which prize they’d like to purchase prizes repeatedly until they decide not to purchase a prize</li>
+        			<li>Private because the user doesn’t need to call this method as it should be called at the end of the listPrizes() method</li>
+      			</ul>
+      		</li>
+		<li>private void selectPrize()</li>
+      			<ul class="squre">
+        			<li>The active process of the user entering which prize they want to purchase, subtracting the cost of the prize from the user’s ticket count, and adding their purchased prize to the myPrizeList</li>
+      			</ul>
+      		</li>
+    	</ul>
+</li>
+</ul>
+<br>
+<br>
 
 - - - -
 <h6 align="center">
@@ -300,7 +383,7 @@ The RockPaperScissors class is a child class to the Game class. It is used to cr
 - - - -
 
 <h6 align="center">
-	<a href="https://github.com/clairehopfensperger">↩ Back To Claire Hopfensperger's Profile</a>
+	<a href="https://github.com/clairehopfensperger">↩ Back to Claire Hopfensperger's Profile</a>
 </h6>
 
 - - - -
