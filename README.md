@@ -10,14 +10,14 @@
 		<td>
 			<a href="#-about-the-class-and-assignment">👾 About the Class and Assignment</a><br><br>
 			<a href="#-the-problem">🎯 The Problem</a><br><br>
-      <a href="#-how-it-works">🕹 How it Works</a><br><br>
-      <a href="#-how-others-can-use-my-code">🎰 How Others Can Use My Code</a><br><br>
-      <a href="#%EF%B8%8F-important-notes-from-the-author-me">♠️ Important Notes From the Author (Me)</a><br><br>
-      <a href="#-uml">🎲 UML</a><br><br>
+      			<a href="#-how-it-works">🕹 How it Works</a><br><br>
+      			<a href="#-how-others-can-use-my-code">🎰 How Others Can Use My Code</a><br><br>
+      			<a href="#%EF%B8%8F-important-notes-from-the-author-me">♠️ Important Notes From the Author (Me)</a><br><br>
+      			<a href="#-uml">🎲 UML</a><br><br>
 			<a href="#-class-overviewsdocumentation">🎱 Class Overviews/Documentation</a>
 			<ul>
 				<li><a href="#game">Game</a></li>
-        <li><a href="#rockpaperscissors">RockPaperScissors</a></li>
+        			<li><a href="#rockpaperscissors">RockPaperScissors</a></li>
 			</ul>
 		</td>
   	</tr>
@@ -51,37 +51,37 @@ Once you’ve created a RockPaperScissors object, you can call the setTokens() m
 <br>
 
 <p align="center">
-  <img src="https://github.com/clairehopfensperger/GameRoom/blob/main/Images/howItWorks3.jpg" width=500>
+ 	<img src="https://github.com/clairehopfensperger/GameRoom/blob/main/Images/howItWorks3.jpg" width=500>
 </p>
 
 In order to begin a game of ‘Rock, Paper, Scissors’, you need to call the play() method. When you call this method, you will be prompted to enter ‘Rock’, ‘Paper’, or ‘Scissors’. Then, once you enter your choice, the program prints to the console your choice, the computer’s choice, and whether you won or lost. Then you’re asked if you want to play again, and this process repeats until you run out of tokens or choose not to play again. If you run out of tokens, you’re asked if you want to add more to continue playing, and if you choose yes, then you can select how many tokens to add and then you can play again.
 <br>
 
 <p align="center">
-  <img src="https://github.com/clairehopfensperger/GameRoom/blob/main/Images/howItWorks5.jpg" width=500><br>
-  <img src="https://github.com/clairehopfensperger/GameRoom/blob/main/Images/howItWorks6.jpg" width=500>
+ 	<img src="https://github.com/clairehopfensperger/GameRoom/blob/main/Images/howItWorks5.jpg" width=500><br>
+ 	<img src="https://github.com/clairehopfensperger/GameRoom/blob/main/Images/howItWorks6.jpg" width=500>
 </p>
 
 When you’re done playing ‘Rock, Paper, Scissors’, you can save your game statistics to a file by using the statsFile() method. When you call this method, you will be prompted to enter a name of a file, and then a file with the name you inputted will be created with your remaining tokens and final score written inside of it. The program will say when your file is ready.
 <br>
 
 <p align="center">
-  <img src="https://github.com/clairehopfensperger/GameRoom/blob/main/Images/howItWorks7.jpg" width=500>
+	<img src="https://github.com/clairehopfensperger/GameRoom/blob/main/Images/howItWorks7.jpg" width=500>
 </p>
 
 After you finish playing ‘Rock, Paper, Scissors’, you can start the process of choosing prizes by creating a Prizes object and adding arguments for score and tokens. In order to add these tokens, you can call getScore() and getTokens() for your RockPaperScissors object. Then, to see and select prizes, you must call the listPrizes() method for your Prizes object. 
 <br>
 
 <p align="center">
-  <img src="https://github.com/clairehopfensperger/GameRoom/blob/main/Images/howItWorks10.jpg" width=500>
+  	<img src="https://github.com/clairehopfensperger/GameRoom/blob/main/Images/howItWorks10.jpg" width=500>
 </p>
 
 When you call the listPrizes() method, your input score and tokens are converted to tickets which allows you to buy prizes. Then, all the available prizes will be listed with their prices, and you can decide if you want to purchase a prize and then enter which prize you want. You are repeatedly asked if you want to purchase a prize until you say no. All the prizes you purchase are added to an ArrayList representing your prizes. Then, if you want to see all your prizes, you can call the myPrizes() method and all of your prizes will be listed. 
 <br>
 
 <p align="center">
-  <img src="https://github.com/clairehopfensperger/GameRoom/blob/main/Images/howItWorks11.jpg" width=500><br>
-  <img src="https://github.com/clairehopfensperger/GameRoom/blob/main/Images/howItWorks12.jpg" width=500>
+  	<img src="https://github.com/clairehopfensperger/GameRoom/blob/main/Images/howItWorks11.jpg" width=500><br>
+  	<img src="https://github.com/clairehopfensperger/GameRoom/blob/main/Images/howItWorks12.jpg" width=500>
 </p>
 
 <br><br>
@@ -95,8 +95,8 @@ Another way people could use my code is by creating their own games using my abs
 
 ## ♠️ Important Notes From the Author (Me)
 <ol type = "1">
-  <li>I do not close my Scanners because, depending on how the user uses the program, closing a Scanner would close the input stream and then the Scanners wouldn’t work for the rest of the program. It was more important to me to have completely functional Scanners than a potential “resource leak.” If the Scanners don’t work, then practically my whole program would not work.</li><br>
-  <li>Regarding the visibility of methods in my classes, I wanted to make the methods reflect the “environment” that the user is interacting with. For example, if the user is actually at an arcade, they would not be able to set their score or decide what choice the computer makes in the game of ‘Rock, Paper, Scissors’. I thought the limited choices for the user would be more realistic. </li>
+  	<li>I do not close my Scanners because, depending on how the user uses the program, closing a Scanner would close the input stream and then the Scanners wouldn’t work for the rest of the program. It was more important to me to have completely functional Scanners than a potential “resource leak.” If the Scanners don’t work, then practically my whole program would not work.</li><br>
+  	<li>Regarding the visibility of methods in my classes, I wanted to make the methods reflect the “environment” that the user is interacting with. For example, if the user is actually at an arcade, they would not be able to set their score or decide what choice the computer makes in the game of ‘Rock, Paper, Scissors’. I thought the limited choices for the user would be more realistic. </li>
 </ol type = "1">
 <br><br>
 
@@ -104,7 +104,7 @@ Another way people could use my code is by creating their own games using my abs
 Here's the UML for my program. 😎
 <br>
 <p align="center">
-  <img src="https://github.com/clairehopfensperger/GameRoom/blob/main/Images/GameRoomUML.jpg" width = 750>
+  	<img src="https://github.com/clairehopfensperger/GameRoom/blob/main/Images/GameRoomUML.jpg" width = 750>
 </p>
 <br><br>
 
@@ -114,179 +114,94 @@ The Game class is an abstract parent class. It has the structure to make differe
 <br>
 
 <ul class="disk">
-  <li>Instance Variables:</li>
-  <ul class="circle">
-    <li>Private int tokens - user’s tokens count</li>
-    <li>Private int score - user’s score</li>
-  </ul>
-  </li>
-  <br>
+<li>Instance Variables:</li>
+	<ul class="circle">
+    		<li>Private int tokens - user’s tokens count</li>
+    		<li>Private int score - user’s score</li>
+  	</ul>
+  	</li>
+	<br>
  
-  <li>Constructor: public Game(int tokens, int score)</li>
-  <ul class="circle">
-    <li>Used to create Game objects</li>
-    <li>Parameter int tokens - user’s initial token count</li>
-    <li>Parameter int score - user’s score</li>
-    <ul class="square">
-      <li>Useful if the user wants to create a new game but keep their score from a previous game</li>
-    </ul>
-    </li>
-  </ul>
-  </li>
-  <br>
+<li>Constructor: public Game(int tokens, int score)</li>
+  	<ul class="circle">
+    		<li>Used to create Game objects</li>
+    		<li>Parameter int tokens - user’s initial token count</li>
+    		<li>Parameter int score - user’s score</li>
+   			<ul class="square">
+				<li>Useful if the user wants to create a new game but keep their score from a previous game</li>
+    			</ul>
+   		</li>
+ 	</ul>
+</li>
+<br>
  
- <li>Getters/Setters:</li>
-  <ul class="circle">
-    <li>public void setTokens(int tokens)</li>
-      <ul class="square">
-        <li>Sets the user’s token count</li>
-        <li>Parameter int tokens - user’s tokens</li>
-      </ul>
-      </li>
-    <li>public int getTokens()</li>
-      <ul class="square">
-        <li>Gets the user’s token count</li>
-        <li>Returns an int value - user’s tokens</li>
-      </ul>
-      </li>
-    <li>public int getScore()</li>
-      <ul class="square">
-        <li>Gets the user's score</li>
-        <li>Returns an int value - user's score</li>
-      </ul>
-      </li>
-    <li>protected void setScore(int score)</li>
-      <ul class="square">
-        <li>Sets the user's score</li>
-        <li>Parameter int score - user's score</li>
-        <li>Protected because I didn’t want the user to be able to mess with their score but I needed the child classes to be able to use this method</li>
-      </ul>
-      </li>
-    </ul>
-    </li>
-  <li>Other Methods:</li>
-  <ul class="circle">
-    <li>public void statsFile()</li>
-      <ul class="square">
-        <li>Takes the user’s stats and writes them into a file</li>
-      </ul>
-      </li>
-    <li>public abstract void play()</li>
-      <ul class="square">
-        <li>Abstract method that child classes must override</li>
-        <li>Plays a game</li>
-      </ul>
-      </li>
-    <li>protected abstract boolean canPlay()</li>
-      <ul class="square">
-        <li>Abstract method that child classes must override</li>
-        <li>Determines if the user can play a game</li>
-        <li>Returns a boolean value - true/false if the user can play</li>
-        <li>Protected because the user doesn’t need to call this method as it should be called at the beginning of the play method</li>
-      </ul>
-      </li>
-    <li>protected abstract void playAgain()</li>
-      <ul class="squre">
-        <li>Abstract method that child classes must override</li>
-        <li>Asks the user if they want to play again</li>
-        <li>Protected because the user doesn’t need to call this method as it should be called at the end of the play method</li>
-      </ul>
-      </li>
-    </ul>
-    </li>
-  </ul>
-  </li>
-  <br>
+<li>Getters/Setters:</li>
+  	<ul class="circle">
+    		<li>public void setTokens(int tokens)</li>
+     			<ul class="square">
+        			<li>Sets the user’s token count</li>
+        			<li>Parameter int tokens - user’s tokens</li>
+      			</ul>
+      		</li>
+    		<li>public int getTokens()</li>
+      			<ul class="square">
+        			<li>Gets the user’s token count</li>
+        			<li>Returns an int value - user’s tokens</li>
+      			</ul>
+      		</li>
+    		<li>public int getScore()</li>
+      			<ul class="square">
+        			<li>Gets the user's score</li>
+        			<li>Returns an int value - user's score</li>
+      			</ul>
+      		</li>
+    		<li>protected void setScore(int score)</li>
+      			<ul class="square">
+        			<li>Sets the user's score</li>
+        			<li>Parameter int score - user's score</li>
+        			<li>Protected because I didn’t want the user to be able to mess with their score but I needed the child classes to be able to use this method</li>
+      			</ul>
+      		</li>
+	</ul>
+</li>
+<li>Other Methods:</li>
+  	<ul class="circle">
+    		<li>public void statsFile()</li>
+			<ul class="square">
+        			<li>Takes the user’s stats and writes them into a file</li>
+			</ul>
+      		</li>
+    		<li>public abstract void play()</li>
+      			<ul class="square">
+        			<li>Abstract method that child classes must override</li>
+        			<li>Plays a game</li>
+      			</ul>
+      		</li>
+    		<li>protected abstract boolean canPlay()</li>
+      			<ul class="square">
+        			<li>Abstract method that child classes must override</li>
+        			<li>Determines if the user can play a game</li>
+        			<li>Returns a boolean value - true/false if the user can play</li>
+        			<li>Protected because the user doesn’t need to call this method as it should be called at the beginning of the play method</li>
+      			</ul>
+      		</li>
+    		<li>protected abstract void playAgain()</li>
+      			<ul class="squre">
+        			<li>Abstract method that child classes must override</li>
+        			<li>Asks the user if they want to play again</li>
+        			<li>Protected because the user doesn’t need to call this method as it should be called at the end of the play method</li>
+      			</ul>
+      		</li>
+    	</ul>
+</li>
+</ul>
+<br>
 <br>
   
 ### RockPaperScissors
-The Game class is an abstract parent class. It has the structure to make different child class game objects.
+The RockPaperScissors class is a child class to the Game class. It is used to create RockPaperScissors objects that allow the user to play ‘Rock, Paper, Scissors’.
 <br>
 
-<ul class="disk">
-  <li>Instance Variables:</li>
-  <ul class="circle">
-    <li>Private int tokens - user’s tokens count</li>
-    <li>Private int score - user’s score</li>
-  </ul>
-  </li>
-  <br>
- 
-  <li>Constructor: public Game(int tokens, int score)</li>
-  <ul class="circle">
-    <li>Used to create Game objects</li>
-    <li>Parameter int tokens - user’s initial token count</li>
-    <li>Parameter int score - user’s score</li>
-    <ul class="square">
-      <li>Useful if the user wants to create a new game but keep their score from a previous game</li>
-    </ul>
-    </li>
-  </ul>
-  </li>
-  <br>
- 
- <li>Getters/Setters:</li>
-  <ul class="circle">
-    <li>public void setTokens(int tokens)</li>
-      <ul class="square">
-        <li>Sets the user’s token count</li>
-        <li>Parameter int tokens - user’s tokens</li>
-      </ul>
-      </li>
-    <li>public int getTokens()</li>
-      <ul class="square">
-        <li>Gets the user’s token count</li>
-        <li>Returns an int value - user’s tokens</li>
-      </ul>
-      </li>
-    <li>public int getScore()</li>
-      <ul class="square">
-        <li>Gets the user's score</li>
-        <li>Returns an int value - user's score</li>
-      </ul>
-      </li>
-    <li>protected void setScore(int score)</li>
-      <ul class="square">
-        <li>Sets the user's score</li>
-        <li>Parameter int score - user's score</li>
-        <li>Protected because I didn’t want the user to be able to mess with their score but I needed the child classes to be able to use this method</li>
-      </ul>
-      </li>
-    </ul>
-    </li>
-  <li>Other Methods:</li>
-  <ul class="circle">
-    <li>public void statsFile()</li>
-      <ul class="square">
-        <li>Takes the user’s stats and writes them into a file</li>
-      </ul>
-      </li>
-    <li>public abstract void play()</li>
-      <ul class="square">
-        <li>Abstract method that child classes must override</li>
-        <li>Plays a game</li>
-      </ul>
-      </li>
-    <li>protected abstract boolean canPlay()</li>
-      <ul class="square">
-        <li>Abstract method that child classes must override</li>
-        <li>Determines if the user can play a game</li>
-        <li>Returns a boolean value - true/false if the user can play</li>
-        <li>Protected because the user doesn’t need to call this method as it should be called at the beginning of the play method</li>
-      </ul>
-      </li>
-    <li>protected abstract void playAgain()</li>
-      <ul class="squre">
-        <li>Abstract method that child classes must override</li>
-        <li>Asks the user if they want to play again</li>
-        <li>Protected because the user doesn’t need to call this method as it should be called at the end of the play method</li>
-      </ul>
-      </li>
-    </ul>
-    </li>
-  </ul>
-  </li>
-  <br>
   
 
 - - - -
