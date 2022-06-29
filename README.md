@@ -202,7 +202,95 @@ The Game class is an abstract parent class. It has the structure to make differe
 The RockPaperScissors class is a child class to the Game class. It is used to create RockPaperScissors objects that allow the user to play ‘Rock, Paper, Scissors’.
 <br>
 
-  
+<ul class="disk">
+<li>Instance Variables:</li>
+	<ul class="circle">
+    		<li>private Scanner in - used to read in user input with the System.in input stream</li>
+			<ul class="sqaure">
+				<li>I made a Scanner object an instance variable because I use a Scanner in multiple methods, and it was more simple to create an instance variable to reference each time than to create a new Scanner object in each method.</li>
+				<li>Note: I do not close Scanner in because if I were to close the Scanner, it would close the input stream, and I need the input stream to stay open because I need to access it many times during the program.</li>
+			</ul>
+  	</ul>
+  	</li>
+	<br>
+ 
+<li>Constructor: public RockPaperScissors(int tokens, int score)</li>
+  	<ul class="circle">
+    		<li>Used to create RockPaperScissors objects which allow the user to play ‘Rock, Paper, Scissors'</li>
+    		<li>Parameter int tokens - user’s initial token count</li>
+    		<li>Parameter int score - user’s score</li>
+   			<ul class="square">
+				<li>Useful if the user wants to play a new game but keeps their score from a previous game</li>
+    			</ul>
+   		</li>
+ 	</ul>
+</li>
+<br>
+
+<li>Methods:</li>
+  	<ul class="circle">
+    		<li>public void play()</li>
+     			<ul class="square">
+        			<li>Implements Game’s abstract play() method</li>
+        			<li>Initiates a game of ‘Rock, Paper, Scissors’, compares what the user and computer choose and determines who wins</li>
+      			</ul>
+      		</li>
+    		<li>protected boolean canPlay()</li>
+      			<ul class="square">
+        			<li>Implements Game’s abstract canPlay() method</li>
+        			<li>Determines of the user is able to play the game based on if they have enough tokens for the game</li>
+				<li>Returns a boolean value - true/false if the user can play</li>
+				<li>Protected because the user doesn’t need to call this method as it should be called at the beginning of the play method</li>
+      			</ul>
+      		</li>
+    		<li>protected void playAgain()</li>
+      			<ul class="square">
+        			<li>Implements Game’s abstract playAgain() method</li>
+        			<li>Asks the user if they want to play another round of ‘Rock, Paper, Scissors’</li>
+				<li>Protected because the user doesn’t need to call this method as it should be called at the end of the play method</li>
+      			</ul>
+      		</li>
+    		<li>private void intro()</li>
+      			<ul class="square">
+        			<li>Prints the intro message to the ‘Rock, Paper, Scissors’ game</li>
+        			<li>Private because the user doesn’t need to call this method as it should be called at the beginning of the play method</li>
+      			</ul>
+      		</li>
+		<li>private void takeTokens(int tokens)</li>
+			<ul class="square">
+				<li>Removes 5 tokens from the user’s token count each time they play a round of ‘Rock, Paper, Scissors’</li>
+				<li>Parameter int tokens - how many tokens to remove</li>
+				<li>Private because the user doesn’t need to call this method as it should be called when the user decides to play each round of ‘Rock, Paper, Scissors’</li>
+			</ul>
+		</li>
+		<li>private void addTokens()</li>
+			<ul class="square">
+				<li>Allows the user to add more tokens to their token count when they run out of tokens but want to play more rounds of ‘Rock, Paper, Scissors’</li>
+				<li>Private because the user doesn’t need to call this method as it should be called when the user decides to play each round of ‘Rock, Paper, Scissors’</li>
+			</ul>
+		</li>
+		<li>private void giveScore(int score)</li>
+			<ul class="square">
+				<li>Adds 100 to the user’s score when they win a round of ‘Rock, Paper, Scissors’</li>
+				<li>Private because the user doesn’t need to call this method as it should be called when the user decides to play each round of ‘Rock, Paper, Scissors’</li>
+			</ul>
+		</li>
+		<li>private int userChoice()</li>
+			<ul class="square">
+				<li>User enters a word and, depending on whether they choose ‘rock’, ‘paper’, or ‘scissors’, this method returns a number (1, 2, or 3) to be used in the math that determines if the user wins or loses</li>
+				<li>Returns an int value - user’s choice</li>
+				<li>Private because the user doesn’t need to call this method as it should be called when the user decides to play each round of ‘Rock, Paper, Scissors’</li>
+			</ul>
+		</li>
+		<li>private int computerChoice()</li>
+			<ul class="square">
+				<li>Randomly sets computer’s choice to a number 1-3 which correlates to ‘rock’, ‘paper’, or ‘scissors’</li>
+				<li>Returns an int value - computer’s choice</li>
+				<li>Private because the user doesn’t need to call this method as it should be called when the user decides to play each round of ‘Rock, Paper, Scissors’</li>
+			</ul>
+		</li>
+	</ul>
+</li>
 
 - - - -
 <h6 align="center">
