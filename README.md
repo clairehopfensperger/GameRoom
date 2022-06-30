@@ -292,6 +292,7 @@ The RockPaperScissors class is a child class to the Game class. It is used to cr
 		</li>
 	</ul>
 </li>
+</ul>
 <br>
 <br>
 
